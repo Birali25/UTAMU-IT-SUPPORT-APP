@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F2F6FC">
+
+    <!-- App Header -->
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/colorSuccess"
+        android:paddingBottom="16dp"
+        android:text="UTAMU IT SUPPORT APP"
+        android:textColor="#2E3A59"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <!-- Your Issues Label -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Students Issues"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#2E3A59"
+        android:paddingBottom="8dp"/>
+
+    <!-- RecyclerView for student issues inside a CardView -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp"
+        android:padding="4dp"
+        android:background="@android:color/white">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/issuesRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Menu Buttons at Bottom (Horizontal) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="16dp"
+        android:weightSum="3"
+        android:layout_marginBottom="8dp">
+
+        <!-- About Us Button -->
+        <Button
+            android:id="@+id/aboutUsButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/gradient_teal"
+            android:drawablePadding="8dp"
+            android:padding="12dp"
+            android:text="About Us"
+            android:textColor="@color/black" />
+
+        <!-- Report Issue Button -->
+        <Button
+            android:id="@+id/reportIssueButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Report Issue"
+            android:textColor="@color/black"
+            android:background="@drawable/gradient_green"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:padding="12dp"
+            android:drawableStart="@drawable/ic_add"
+            android:drawablePadding="8dp"/>
+
+        <!-- Help Tutorials Button -->
+        <Button
+            android:id="@+id/helpTutorialsButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Help Tutorials"
+            android:textColor="@color/black"
+            android:background="@drawable/gradient_green"
+            android:layout_marginStart="4dp"
+            android:padding="12dp"
+            android:drawablePadding="8dp"/>
+    </LinearLayout>
+
+</LinearLayout>

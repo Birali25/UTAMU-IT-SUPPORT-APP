@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#2196F3</color>        <!-- Blue -->
+    <color name="colorPrimaryDark">#1565C0</color>    <!-- Dark Blue -->
+    <color name="colorAccent">#FF4081</color>         <!-- Pink -->
+
+    <color name="colorSuccess">#4CAF50</color>        <!-- Green -->
+    <color name="colorWarning">#FFC107</color>        <!-- Yellow -->
+    <color name="colorDanger">#F44336</color>         <!-- Red -->
+
+    <color name="colorInfo">#03A9F4</color>           <!-- Light Blue -->
+    <color name="colorLight">#F5F5F5</color>          <!-- Light Gray -->
+    <color name="colorDark">#212121</color>           <!-- Dark Gray/Black -->
+
+    <color name="colorPurple">#9C27B0</color>         <!-- Purple -->
+
+
+</resources>
